@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Kakuma Marketplace</title>
+   <link rel="stylesheet" href="./styles.css">
+   <script src="./main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+    <!-- Header Section -->
+  <header>
+    <h1>Kakuma Marketplace</h1>
+    <p>Buy and sell items within the Kakuma community</p>
+  </header>
+    <!-- Form Section for CRUD -->
+    <section>
+        <h2>Add New Listing</h2>
+        <form id="listing-form">
+            <label for="item-name">Item Name</label>
+            <input type="text" id="item-name" placeholder="Enter the item name" required>
+
+            <label for="item-description">Description</label>
+            <input type="text" id="item-description" placeholder="Enter the item description" required>
+            <label for="item-price">Price (in KES)</label>
+            <input type="number" id="item-price" placeholder="Enter the item price" required>
+
+            <label for="item-image">Image</label>
+            <input type="file" id="item-image" accept="image/*" required>
+
+            <button type="submit">Add Listing</button>
+        </form>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="listings">
+        <h2>Available Listings</h2>
+        <div id="listing-items">
+            <p>No listings available yet.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Kakuma Marketplace. All Rights Reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>

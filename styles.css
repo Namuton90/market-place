@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #FFC745;    /* Vibrant yellow */
+    --background-color: #007A78; /* Deep teal */
+    --text-color: #FFFFFF;       /* White text */
+    --secondary-text-color: #333333; /* Dark gray for text */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    color: var(--secondary-text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.listings {
+    margin-top: 20px;
+}
+
+.listing-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.listing-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.listing-details {
+    flex-grow: 1;
+}
+
+.listing-details span {
+    font-weight: bold;
+    display: block;
+}
+.actions button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1em;
+    }
+
+    .listing-item img {
+        width: 50px;
+        height: 50px;
+    }
+}
